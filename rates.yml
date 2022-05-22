@@ -1,0 +1,5 @@
+forever:
+  service: FIRST CLASS
+  detail: 
+    type: FirstClassMailType
+    value: LETTER

@@ -1,0 +1,16 @@
+<RateV4Request USERID="">
+  <Revision>2</Revision>
+  <Package ID="0">
+    <Service>SERVICE</Service>
+    <ZipOrigination>01001</ZipOrigination>
+    <ZipDestination>01001</ZipDestination>
+    <Pounds>0</Pounds>
+    <Ounces>1</Ounces>
+    <Container></Container>
+    <Width></Width>
+    <Length></Length>
+    <Height></Height>
+    <Girth></Girth>
+    <Machinable>TRUE</Machinable>
+  </Package>
+</RateV4Request>
