@@ -11,14 +11,6 @@ class RateXML
   @@doc = File.read('query.xml')
   @@rates = YAML.load_file('rates.yml')
 
-  def xml
-    @xml
-      .to_s
-      .gsub(/\\n/, '')
-      .gsub(/>\s*/, ">")
-      .gsub(/\s*</, "<")
-  end
-
   def initialize(type)
     @xml = Nokogiri::XML(@@doc)
     get_credential
@@ -26,6 +18,14 @@ class RateXML
       @@rates[type]['service'], 
       @@rates[type]['detail']
     )
+  end
+
+  def xml
+    @xml
+      .to_s
+      .gsub(/\\n/, '')
+      .gsub(/>\s*/, ">")
+      .gsub(/\s*</, "<")
   end
 
   def get_credential
@@ -87,5 +87,9 @@ query = RateQuery.new(
   RateXML.new("forever").xml
 ).query
 
-rate = API.new(query).rate
-puts rate
+@rate = API.new(query).rate
+puts JSON.dump(
+  {
+    "forever": @rate
+  }
+)
