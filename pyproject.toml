@@ -1,0 +1,19 @@
+[project]
+name = "uspost-al"
+version = "0.1.0"
+description = "USPS 1oz Letter Stamp Price API - Scrapes Notice 123 for current stamp prices"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "fastapi>=0.136.3",
+    "lxml>=6.1.1",
+    "requests>=2.34.2",
+    "uvicorn>=0.49.0",
+]
+
+[project.scripts]
+uspost-al = "main:main"
+
+[tool.setuptools]
+packages = ["uspost_al"]
