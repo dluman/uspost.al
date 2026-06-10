@@ -88,7 +88,6 @@ ERROR_FRAGMENT = """
 </div>
 """
 
-
 def create_router(service: StampPriceService) -> APIRouter:
     """Create the API router with all endpoints."""
     router = APIRouter()
