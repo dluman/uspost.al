@@ -15,7 +15,7 @@ INDEX_TEMPLATE = """
     <title>USPS 1oz Letter Stamp Price</title>
     <script src="https://unpkg.com/htmx.org@1.9.12"></script>
     <style>
-        body {{
+        body {
             margin: 0;
             padding: 0;
             display: flex;
@@ -24,39 +24,39 @@ INDEX_TEMPLATE = """
             min-height: 100vh;
             background: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }}
-        .container {{
+        }
+        .container {
             text-align: center;
-        }}
-        .price {{
+        }
+        .price {
             font-size: 20vw;
             font-weight: bold;
             color: #333333;
             line-height: 1;
             margin: 0;
-        }}
-        .currency {{
+        }
+        .currency {
             font-size: 10vw;
             color: #666666;
             vertical-align: super;
-        }}
-        .subtitle {{
+        }
+        .subtitle {
             font-size: 1.5rem;
             color: #999999;
             margin-top: 2rem;
-        }}
-        .source {{
+        }
+        .source {
             font-size: 0.9rem;
             color: #cccccc;
             margin-top: 1rem;
-        }}
-        .error {{
+        }
+        .error {
             color: #cc0000;
-        }}
-        .loading {{
+        }
+        .loading {
             font-size: 5vw;
             color: #cccccc;
-        }}
+        }
     </style>
 </head>
 <body>
