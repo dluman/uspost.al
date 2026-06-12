@@ -85,7 +85,7 @@ uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 |----------|--------|-------------|---------------|
 | `/` | GET | **Index page** - Loads HTMX and fetches price dynamically | HTML |
 | `/price` | GET | **Price fragment** - Returns HTML fragment for HTMX, or JSON if requested | HTML/JSON |
-| `/stamp-price` | GET | **JSON API** - Returns price in JSON format | JSON |
+| `/v1/stamp/price` | GET | **JSON API** - Returns price in JSON format | JSON |
 | `/health` | GET | Health check and cache status | JSON |
 | `/docs` | GET | Auto-generated Swagger documentation | HTML |
 

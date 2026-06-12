@@ -123,7 +123,7 @@ def create_router(service: StampPriceService) -> APIRouter:
         
         return HTMLResponse(PRICE_FRAGMENT.format(price=price_info["price"]))
     
-    @router.get("/stamp-price")
+    @router.get("/v1/stamp/price")
     async def stamp_price():
         """JSON API endpoint for programmatic access."""
         price_info = service.get_price()
